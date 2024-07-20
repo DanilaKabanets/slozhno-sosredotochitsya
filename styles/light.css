@@ -1,45 +1,36 @@
+/*
+  Специально для светлой темы при наличии класса.
+  Здесь окажутся стили, которые нужно переопределить принудительно,
+  переключая тему
+*/
+
 .page.theme_light {
-  --accent-color: #FF8DCB;
+  --button-color: #353430;
+  --heading-color: #FFC2E6;
   --background-color: #FFF1F7;
-  --background-image: url(../images/cover-image-light.png);
-  --button-default-color: #353430;
-  --button-hover-color: rgba(50, 49, 45, 0.40);
-  --card-title-color: #353430;
-  --card-description-color: #353430;
-  --gallery-title-color: #353430;
-  --footer-title-color: #FFC2E6;
-  --footer-title-shadow-color: #FF0070;
-  --content-title-color: #353430;
-  --header-decor-color: #353430;
-  --header-title-color: #FFC2E6;
-  --header-title-shadow-color: #FF0070;
-  --subheading-text-color: #353430;
-}
+  --text-color: #353430;
+  --accent-color: #FF8DCB;
+  --title-color:#353430;
+  --section-heading-color: #353430;
+  --common-font-size: 18px;
+  --background-image:url(../images/cover-image-light.png);
+  --hovered-button-border: rgba(50, 49, 45, 0.40);
+  --rec-visibility: none;
 
-.page.theme_light .header__rec {
-  visibility: hidden;
 }
-
 @media (prefers-color-scheme: light) {
-  .page {
-      --accent-color: #FF8DCB;
-      --background-color: #FFF1F7;
-      --background-image: url(../images/cover-image-light.png);
-      --button-default-color: #353430;
-      --button-hover-color: rgba(50, 49, 45, 0.40);
-      --card-title-color: #353430;
-      --card-description-color: #353430;
-      --gallery-title-color: #353430;
-      --footer-title-color: #FFC2E6;
-      --footer-title-shadow-color: #FF0070;
-      --content-title-color: #353430;
-      --header-decor-color: #353430;
-      --header-title-color: #FFC2E6;
-      --header-title-shadow-color: #FF0070;
-      --subheading-text-color: #353430;
-  }
+:root{
+  --button-color: #353430;
+  --heading-color: #FFC2E6;
+  --background-color: #FFF1F7;
+  --text-color: #353430;
+  --accent-color: #FF8DCB;
+  --title-color:#353430;
+  --section-heading-color: #353430;
+  --common-font-size: 18px;
+  --background-image:url(../images/cover-image-light.png);
+  --hovered-button-border: rgba(50, 49, 45, 0.40);
+  --rec-visibility: none;
+}
 
-  .header__rec {
-      visibility: hidden;
-  }
 }

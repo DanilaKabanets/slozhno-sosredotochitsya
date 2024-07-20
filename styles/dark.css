@@ -1,44 +1,38 @@
-.page.theme_dark {
-  --accent-color: #FF0070;
-  --background-color: #000028;
-  --background-image: url(../images/cover-image-dark.png);
-  --button-default-color: #FF0070;
-  --button-hover-color: rgba(255, 0, 112, 0.4);
-  --card-title-color: #000028;
-  --card-description-color: #F1B2CE;
-  --gallery-title-color: #000028;
-  --footer-title-color: #DB00FF;
-  --footer-title-shadow-color: #FF0070;
-  --content-title-color: #FF0070;
-  --header-decor-color: #FF0070;
-  --header-title-color: #DB00FF;
-  --header-title-shadow-color: #FF0070;
-  --subheading-text-color: #000028;
-}
+/*
+  Специально для тёмной темы при наличии класса,
+  здесь окажутся стили, которые нужно переопределить принудительно,
+  переключая тему
+*/
 
-.page.theme_dark .header__rec {
-visibility: visible;
+.page.theme_dark {
+  --button-color: #ff0070;
+  --background-color: #000028;
+  --text-color: #f1b2ce;
+  --heading-color: #DB00FF;
+  --accent-color: #ff0070;
+  --title-color: #000028;
+  --section-heading-color: #ff0070;
+  --common-font-size: 18px;
+  --background-image: url(../images/cover-image-dark.png);
+  --hovered-button-border: rgba(255, 0, 112, 0.4);
+  --rec-visibility: block;
+
 }
 
 @media (prefers-color-scheme: dark) {
-  .page {
-      --accent-color: #FF0070;
-      --background-color: #000028;
-      --background-image: url(../images/cover-image-dark.png);
-      --button-default-color: #FF0070;
-      --button-hover-color: rgba(255, 0, 112, 0.4);
-      --card-title-color: #000028;
-      --card-description-color: #F1B2CE;
-      --gallery-title-color: #000028;
-      --footer-title-color: #DB00FF;
-      --footer-title-shadow-color: #FF0070;
-      --content-title-color: #FF0070;
-      --header-decor-color: #FF0070;
-      --header-title-color: #DB00FF;
-      --header-title-shadow-color: #FF0070;
-      --subheading-text-color: #000028;
+  :root {
+    --button-color: #ff0070;
+    --background-color: #000028;
+    --text-color: #f1b2ce;
+    --heading-color: #DB00FF;
+    --accent-color: #ff0070;
+    --title-color: #000028;
+    --section-heading-color: #000028;
+    --common-font-size: 18px;
+    --background-image: url(../images/cover-image-dark.png);
+    --hovered-button-border: rgba(255, 0, 112, 0.4);
+    --rec-visibility: block;
   }
-  .header__rec {
-    visibility: visible;
-}
+
+
 }
