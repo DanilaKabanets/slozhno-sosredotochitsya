@@ -303,6 +303,10 @@
     margin-block-end: 80px;
   }
 
+  .gallery {
+    margin-block-end: 60px;
+  }
+
   .gallery-wrap {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -315,8 +319,7 @@
   }
 
   .footer {
-    padding: 20px;
-    margin-block-start: 20px;
+    padding: 0 20px;
   }
 
   .footer__title,
@@ -344,6 +347,8 @@
     gap: 12px;
     margin-block-end: 80px;
   }
+
+
 
   .detailed .reasons-list {
     display: grid;
